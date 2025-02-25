@@ -90,3 +90,10 @@ describe("generadorRomanos", () =>{
     })
 });
 
+describe("generadorRomanos", () =>{
+    it("Deberia generar numeros del 1 al 100 a romano", () => {
+        expect(generador(100)).toEqual('C');
+    })
+});
+
+

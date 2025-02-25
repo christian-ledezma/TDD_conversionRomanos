@@ -1,4 +1,4 @@
-import convertirRomanos from "./generador.js";
+import generador from "./generadorRomanos.js";
 
 const cantidad = document.querySelector("#cantidad-romanos");
 const form = document.querySelector("#romanos-form");
@@ -11,7 +11,7 @@ form.addEventListener("submit", (event) => {
   div.innerHTML = "";
 
   for(let i=1; i <= quantity; i++){
-    div.innerHTML += `<p>${i}  -->  ${convertirRomanos(i)} </p>`;
+    div.innerHTML += `<p>${i}  -->  ${generador(i)} </p>`;
   }
   
 });

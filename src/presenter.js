@@ -1,15 +1,17 @@
-import sumar from "./sumador";
+import convertirRomanos from "./generador.js";
 
-const first = document.querySelector("#primer-numero");
-const second = document.querySelector("#segundo-numero");
-const form = document.querySelector("#sumar-form");
+const cantidad = document.querySelector("#cantidad-romanos");
+const form = document.querySelector("#romanos-form");
 const div = document.querySelector("#resultado-div");
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
 
-  const firstNumber = Number.parseInt(first.value);
-  const secondNumber = Number.parseInt(second.value);
+  const quantity = Number.parseInt(cantidad.value);
+  div.innerHTML = "";
 
-  div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
+  for(let i=1; i <= quantity; i++){
+    div.innerHTML += `<p>${i}  -->  ${convertirRomanos(i)} </p>`;
+  }
+  
 });

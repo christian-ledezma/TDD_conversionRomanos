@@ -22,12 +22,16 @@ function generador(num){
             num -= 5;
         }
         else if (num == 9){
-            resultado += 'IV';
+            resultado += 'IX';
             num -= 9;
         }
         else if (num == 10){
             resultado += 'X';
             num -= 10;
+        }
+        else if (num == 40){
+            resultado += 'XL';
+            num -= 40;
         }
         else{
             if(num > 10){

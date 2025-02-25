@@ -31,7 +31,13 @@ describe("generadorRomanos", () => {
 });
 
 describe("generadorRomanos", () =>{
-    it("Deberia generar numeros del 1 al 6 a romano", () => {
-        expect(generador(6)).toEqual('VI');
+    it("Deberia generar numeros del 1 al 8 a romano", () => {
+        expect(generador(8)).toEqual('VIII');
+    })
+});
+
+describe("generadorRomanos", () =>{
+    it("Deberia generar numeros del 1 al 9 a romano", () => {
+        expect(generador(9)).toEqual('IV');
     })
 });

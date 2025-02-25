@@ -19,7 +19,11 @@ function generador(num){
         }
         else if (num == 5){
             resultado += 'V';
-            num -= 5
+            num -= 5;
+        }
+        else if (num == 9){
+            resultado += 'IV';
+            num -= 9;
         }
         else{
             resultado += 'V';

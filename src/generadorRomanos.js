@@ -25,6 +25,10 @@ function generador(num){
             resultado += 'IV';
             num -= 9;
         }
+        else if (num == 10){
+            resultado += 'X';
+            num -= 10;
+        }
         else{
             resultado += 'V';
             num -= 5;

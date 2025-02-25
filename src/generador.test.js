@@ -107,3 +107,9 @@ describe("generadorRomanos", () =>{
         expect(generador(400)).toEqual('CD');
     })
 });
+
+describe("generadorRomanos", () =>{
+    it("Deberia generar numeros del 1 al 499 a romano", () => {
+        expect(generador(499)).toEqual('CDXCIX');
+    })
+});

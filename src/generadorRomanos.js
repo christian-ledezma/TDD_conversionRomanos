@@ -30,8 +30,14 @@ function generador(num){
             num -= 10;
         }
         else{
-            resultado += 'V';
-            num -= 5;
+            if(num > 10){
+                resultado += 'X';
+                num -= 10;
+            }
+            else{
+                resultado += 'V';
+                num -= 5;
+            }
         }
     }    
     return resultado;

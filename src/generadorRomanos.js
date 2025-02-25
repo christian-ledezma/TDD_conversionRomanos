@@ -1,14 +1,32 @@
 function generador(num){
-    if (num == 1)
-        return 'I';
-    else if (num == 2)
-        return 'II';
-    else if (num == 3)
-        return 'III';
-    else if (num == 4)
-        return 'IV';
-    else
-        return 'V';
+    let resultado = '';
+    while(num > 0){
+        if (num == 1){
+            resultado += 'I';
+            num -= 1;
+        }
+        else if (num == 2){
+            resultado += 'II';
+            num -= 2;
+        }
+        else if (num == 3){
+            resultado += 'III';
+            num -= 3;
+        }
+        else if (num == 4){
+            resultado += 'IV';
+            num -= 4;
+        }
+        else if (num == 5){
+            resultado += 'V';
+            num -= 5
+        }
+        else{
+            resultado += 'V';
+            num -= 5;
+        }
+    }    
+    return resultado;
 }
 
 export default generador;

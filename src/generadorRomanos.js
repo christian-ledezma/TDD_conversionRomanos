@@ -37,8 +37,16 @@ function generador(num){
             resultado += 'L';
             num -= 50;
         }
+        else if (num == 90){
+            resultado += 'XC';
+            num -= 90;
+        }
         else{
-            if(num > 40){
+            if (num >50){
+                resultado += 'L';
+                num -= 50;
+            }
+            else if(num > 40){
                 resultado += 'XL';
                 num -= 40;
             }

@@ -72,7 +72,17 @@ describe("generadorRomanos", () =>{
     })
 });
 
+describe("generadorRomanos", () =>{
+    it("Deberia generar numeros del 1 al 89 a romano", () => {
+        expect(generador(89)).toEqual('LXXXIX');
+    })
+});
 
+describe("generadorRomanos", () =>{
+    it("Deberia generar numeros del 1 al 90 a romano", () => {
+        expect(generador(90)).toEqual('XC');
+    })
+});
 
 
 

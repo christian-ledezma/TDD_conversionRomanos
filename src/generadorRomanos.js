@@ -5,8 +5,10 @@ function generador(num){
         return 'II';
     else if (num == 3)
         return 'III';
-    else
+    else if (num == 4)
         return 'IV';
+    else
+        return 'V';
 }
 
 export default generador;

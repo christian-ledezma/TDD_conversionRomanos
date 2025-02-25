@@ -2,9 +2,9 @@ function generador(num){
     if (num == 1)
         return 'I';
     else if ( num == 2)
-        return 'II'
+        return 'II';
     else 
-        return 'III'
+        return 'III';
 }
 
 export default generador;

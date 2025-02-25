@@ -97,8 +97,7 @@ describe("generadorRomanos", () =>{
 });
 
 describe("generadorRomanos", () =>{
-    it("Deberia generar numeros del 1 al 101 a romano", () => {
+    it("Deberia generar numeros del 1 al 399 a romano", () => {
         expect(generador(399)).toEqual('CCCXCIX');
     })
 });
-

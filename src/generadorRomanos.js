@@ -1,8 +1,10 @@
 function generador(num){
     if (num == 1)
         return 'I';
-    else
+    else if ( num == 2)
         return 'II'
+    else 
+        return 'III'
 }
 
 export default generador;

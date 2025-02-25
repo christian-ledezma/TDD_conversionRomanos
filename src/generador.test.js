@@ -119,3 +119,9 @@ describe("generadorRomanos", () =>{
         expect(generador(500)).toEqual('D');
     })
 });
+
+describe("generadorRomanos", () =>{
+    it("Deberia generar numeros del 1 al 899 a romano", () => {
+        expect(generador(899)).toEqual('DCCCXCIX');
+    })
+});

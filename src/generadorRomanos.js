@@ -33,6 +33,10 @@ function generador(num){
             resultado += 'XL';
             num -= 40;
         }
+        else if (num == 50){
+            resultado += 'L';
+            num -= 50;
+        }
         else{
             if(num > 40){
                 resultado += 'XL';

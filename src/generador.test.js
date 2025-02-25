@@ -60,6 +60,13 @@ describe("generadorRomanos", () =>{
     })
 });
 
+describe("generadorRomanos", () =>{
+    it("Deberia generar numeros del 1 al 49 a romano", () => {
+        expect(generador(49)).toEqual('XLIX');
+    })
+});
+
+
 
 
 

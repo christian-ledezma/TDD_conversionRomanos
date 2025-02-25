@@ -34,7 +34,11 @@ function generador(num){
             num -= 40;
         }
         else{
-            if(num > 10){
+            if(num > 40){
+                resultado += 'XL';
+                num -= 40;
+            }
+            else if (num > 10){
                 resultado += 'X';
                 num -= 10;
             }

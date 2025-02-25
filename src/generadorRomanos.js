@@ -46,7 +46,11 @@ function generador(num){
             num -= 100;
         }
         else{
-            if (num > 90){
+            if (num > 100){
+                resultado += 'C';
+                num -= 100;
+            }
+            else if (num > 90){
                 resultado += 'XC';
                 num -= 90;
             }
